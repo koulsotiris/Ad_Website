@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="el">
+
+<!-- HEAD -->
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car Rentals</title>
+</head>
+
+<body>
+    
+  <!-- NAV BAR -->
+  <nav class="nav">
+    <div id="logo">
+        <img src="RESOURCES/logo.png" alt="Logo" width="58"  height="58">
+    </div>
+    <ul>
+      <li><div id="logo-li">
+        <img src="RESOURCES/logo.png" alt="Logo2" width="100"  height="100">
+      </div></li>
+      <li><a href="index.html"><i class="fa fa-fw fa-home"></i> <span>Home</span></a></li>
+      <li class="dropdown">
+        <a href="categories.html" class="dropbtn"><i class="fa fa-bars"></i> <span>Categories</span></a>
+        <div class="dropdown-content">
+          <a href="categories.html#house">Ακίνητα</a>
+          <a href="categories.html#car">Οχήματα</a>
+          <a href="categories.html#job">Εργασία</a>
+          <a href="categories.html#parts">Ανταλλακτικά</a>
+          <a href="categories.html#tools">Οικιακές συσκευές</a>
+        </div>
+      </li>
+      <li><a href="about-us.html"><i class="fa fa-comment"></i> <span>About Us</span></a></li>
+      <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> <span>Contact</span></a></li>
+      <li><a href="register.html"><i class="fa fa-fw fa-user"></i><span>Register</span></a></li>
+    </ul>
+    
+</nav>
+
+  <!--Car Rentals-->
+  <header class="header">
+  <h2 class="hcenter">Αγγελίες Πώλησης Αυτοκινήτων </h2>
+  </header>
+  
+  <div class="sidebar">
+    <form id="filterForm" action="filter.php" method="get">
+      <h2>Φίλτρα αναζήτησης</h2>
+  
+      <label for="location">Τοποθεσία:</label>
+      <input type="text" id="location" name="location" placeholder="π.χ. Αθήνα ">
+  
+      <label for="price">Έυρος τιμής:</label>
+      <input type="range" id="price" name="price" min="0" max="1000" step="50">
+      <output for="price">0 - 70.000€</output>
+  
+      <label for="date">Ελάχιστο έτος κυκλοφορίας :</label>
+      <input type="number" id="date" name="date" min="1900" max="2023" placeholder="π.χ. 2010 ">
+
+      <label>Ζημιά :</label>
+    <div>
+        <input type="radio" id="damageYes" name="damage" value="yes">
+        <label for="damageYes">Ναι</label>
+
+        <input type="radio" id="damageNo" name="damage" value="no">
+        <label for="damageNo">Όχι</label>
+    </div>
+  
+      <label for="cc">Ελάχιστος κυβισμός :</label>
+      <input type="number" id="cc" name="cc" min="800" max="4000" placeholder="π.χ. 1200 ">
+  
+      <label for="trip">Μέγιστα Χιλιόμετρα :</label>
+      <input type="number" id="trip" name="trip" min="80000" max="300000" placeholder="π.χ. 2 ">
+  
+      <label for="code">Κωδικός αγγελίας:</label>
+      <input type="number" id="code" name="code" min="11" max="15" placeholder="π.χ. 12 ">
+  
+      <button type="button"><i class="fa fa-search"></i></button>
+  </form>
+  
+</div>
+  
+  <main class="main">
+
+  <section class="grid-container">
+  <!-- <div class="ad-container"> -->
+    <div class="ad">
+        <div class="title">
+        <h2 >Toyota Yaris 2017</h2>
+        <h3>13.900 €</h3> 
+        </div>
+        <img src="RESOURCES/car11.jpg" alt="Αυτοκίνητο 1" width="350" height="250">
+        
+        <div class="text-nextto-image"><p>
+            <span><img src="RESOURCES/date.png" alt="date" width="30" height="30"> 9 / 2017 </span>
+            <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30">101.000 χλμ </span>
+            <span><img src="RESOURCES/engine.png" alt="engine" width="40" height="30"> 1.500 cc</span>
+            <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30"> 111 bhp</span>
+            <span><img src="RESOURCES/gas.png" alt="gas" width="40" height="30"> Bενζίνη  </span>
+          </p>
+        </div>
+        
+        <p><b>Ελευσίνα Αττικής 19200</b></p>
+        <p>Τελευταία τροποποίηση: 8 ώρες πριν </p>
+        <p class="ad-code">Κωδικός Αγγελίας: 21</p>
+    </div>
+
+      <div class="ad">
+        <div class="title">
+        <h2>Peugeot 208 '13 GT</h2>
+        <h3>10.700 €</h3> 
+        </div>
+        <img src="RESOURCES/car2.png" alt="Αυτοκίνητο 2" width="350" height="250">
+        
+          <div class="text-nextto-image"><p>
+          <span><img src="RESOURCES/date.png" alt="date" width="30" height="30"> 1 / 2023 </span>
+          <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30"> 94.300 χλμ </span>
+          <span><img src="RESOURCES/engine.png" alt="engine" width="40" height="30"> 1.600 cc</span>
+          <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30"> 156 bhp</span>
+          <span><img src="RESOURCES/gas.png" alt="gas" width="40" height="30"> Βενζίνη  </span>
+          </p></div>
+        
+        <p><b>Ξυλόκαστρο Κορινθίας 20400 </b></p>
+        <p>Τελευταία τροποποίηση: 1 ημέρα πριν </p>
+        <p class="ad-code">Κωδικός Αγγελίας: 22</p>
+      </div>
+
+      <div class="ad">
+        <div class="title">
+        <h2>Nissan Micra '16</h2>
+        <h3>9300 €</h3> 
+      </div>
+        <img src="RESOURCES/car3.jpg" alt="Αυτοκίνητο 3" width="350" height="250">
+        
+          <div class="text-nextto-image"><p>
+          <span><img src="RESOURCES/date.png" alt="date" width="30" height="30">  3 / 2016 </span>
+          <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30"> 98.600 χλμ</span>
+          <span><img src="RESOURCES/engine.png" alt="engine" width="40" height="30"> 1.198 cc</span>
+          <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30"> 80 bhp</span>
+          <span><img src="RESOURCES/gas.png" alt="gas" width="40" height="30"> Βενζίνη  </span>
+          </p></div>
+        
+        <p><b>Αργυρούπολη Αττικής 16451</b></p>
+        <p>Τελευταία τροποποίηση: 3 ώρες πριν </p>
+        <p class="ad-code">Κωδικός Αγγελίας: 23</p>
+      </div>
+
+      <div class="ad">
+        <div class="title">
+          <h2>Volkwagen Polo '19 </h2>
+          <h3>13850 €</h3> 
+        </div>
+          <img src="RESOURCES/car4.jfif" alt="Αυτοκίνητο 4" width="350" height="250">
+          
+            <div class="text-nextto-image"><p>
+              <span><img src="RESOURCES/date.png" alt="date" width="30" height="30"> 6 / 2019 </span>
+              <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30"> 99.000 χλμ </span>
+              <span><img src="RESOURCES/engine.png" alt="engine" width="40" height="30"> 1.600 cc</span>
+              <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30"> 80 bhp</span>
+              <span><img src="RESOURCES/gas.png" alt="gas" width="40" height="30"> Πετρέλαιο  </span>
+            </p></div>
+          
+          <p><b>Χαλάνδρι Αττικής 15232</b></p>
+          <p>Τελευταία τροποποίηση: 4 ημέρες πριν </p>
+          <p class="ad-code">Κωδικός Αγγελίας: 24</p>
+        </div>
+
+      <div class="ad">
+        <div class="title">
+          <h2>Bmw X5 '20</h2>
+          <h3>82.000 €</h3> 
+        </div>
+          <img src="RESOURCES/car5.jpg" alt="Αυτοκίνητο 5" width="350" height="250">
+          
+            <div class="text-nextto-image"><p>
+              <span><img src="RESOURCES/date.png" alt="date" width="30" height="30"> 8 / 2020 </span>
+              <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30"> 32.500 χλμ </span>
+              <span><img src="RESOURCES/engine.png" alt="engine" width="40" height="30"> 1.998 cc</span>
+              <span><img src="RESOURCES/speedmeter.png" alt="speedmeter" width="50" height="30"> 238 bhp</span>
+              <span><img src="RESOURCES/gas.png" alt="gas" width="40" height="30"> Πετρέλαιο  </span>
+            </p></div>
+          
+          <p><b>Αγία Παρασκευή Αττικής 15343</b></p>
+          <p>Τελευταία τροποποίηση: 4 μέρες πριν </p>
+          <p class="ad-code">Κωδικός Αγγελίας: 25</p>
+          </div>
+  <!-- </div> -->
+</section>
+</main>
+
+
+
+
+  
+<!-- FOOTER -->
+<footer class="footer">
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p>Location: Greece, Athens, 11362<br>
+      Tel: 210-123-45-67<br>
+      &copy; Copyright 2020
+  </p>
+</footer>
+</body>
+
+</html>

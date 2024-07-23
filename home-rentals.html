@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="el">
+
+
+<!-- HEAD -->
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Rentals</title>
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <nav class="nav">
+    <div id="logo">
+        <img src="RESOURCES/logo.png" alt="Logo" width="58"  height="58">
+    </div>
+    <ul>
+      <li><div id="logo-li">
+        <img src="RESOURCES/logo.png" alt="Logo2" width="100"  height="100">
+      </div></li>
+      <li><a href="index.html"><i class="fa fa-fw fa-home"></i> <span>Home</span></a></li>
+      <li class="dropdown">
+        <a href="categories.html" class="dropbtn"><i class="fa fa-bars"></i> <span>Categories</span></a>
+        <div class="dropdown-content">
+          <a href="categories.html#house">Ακίνητα</a>
+          <a href="categories.html#car">Οχήματα</a>
+          <a href="categories.html#job">Εργασία</a>
+          <a href="categories.html#parts">Ανταλλακτικά</a>
+          <a href="categories.html#tools">Οικιακές συσκευές</a>
+        </div>
+      </li>
+      <li><a href="about-us.html"><i class="fa fa-comment"></i> <span>About Us</span></a></li>
+      <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> <span>Contact</span></a></li>
+      <li><a href="register.html"><i class="fa fa-fw fa-user"></i><span>Register</span></a></li>
+    </ul>
+    
+</nav>
+
+
+<!-- Rentals -->
+
+<header class="header">
+  <h2 class="hcenter">Αγγελίες Ενοικίασης Κατοικιών </h2>
+</header>
+
+<div class="sidebar">
+  <form id="filterForm" action="filter.php" method="get">
+    <h2>Φίλτρα αναζήτησης</h2>
+
+    <label for="location">Τοποθεσία:</label>
+    <input type="text" id="location" name="location" placeholder="π.χ. Αθήνα ">
+
+    <label for="price">Έυρος τιμής:</label>
+    <input type="range" id="price" name="price" min="0" max="1000" step="50">
+    <output for="price">0 - 1500€</output>
+
+    <label for="date">Ελάχιστο έτος κατασκευής :</label>
+    <input type="number" id="date" name="date" min="1900" max="2023" placeholder="π.χ. 2010 ">
+
+    <label for="bedrooms">Αριθμός υπνοδωματίων:</label>
+    <input type="number" id="bedrooms" name="bedrooms" min="1" max="10" placeholder="π.χ. 2 ">
+
+    <label for="bathrooms">Αριθμός μπάνιων:</label>
+    <input type="number" id="bathrooms" name="bathrooms" min="1" max="10" placeholder="π.χ. 2 ">
+
+    <label for="code">Κωδικός αγγελίας:</label>
+    <input type="number" id="code" name="code" min="11" max="15" placeholder="π.χ. 12 ">
+
+    <button type="button"><i class="fa fa-search"></i></button>
+</form>
+
+</div>
+
+<main class="main">
+
+    <section class="grid-container">
+    <!-- <div class="ad-container"> -->
+      <a href="home-rentals-details.html" class="ad">
+          <div class="title">
+          <h2 >Διαμέρισμα 65 τ.μ.</h2>
+          <h3>850 €</h3> 
+          </div>
+          <img src="RESOURCES/house1.jpg" alt="Σπίτι 1" width="350" height="250">
+          
+            <div class="text-nextto-image"><p>
+            <span><img src="RESOURCES/bed.png" alt="bed" width="40" height="40"> x2</span> 
+            <span><img src="RESOURCES/bath.png" alt="bath" width="40" height="40"> x1</span> 
+            <span><img src="RESOURCES/house.png" alt="house" width="40" height="40"> 2000</span>  
+            </p></div>
+          
+          <p><b>Αθήνα (Μεταξουργείο)</b></p>
+          <p>Τελευταία τροποποίηση: 7 ημέρες πριν </p>
+          <p class="ad-code">Κωδικός Αγγελίας: 11</p>
+        </a>
+
+        <div class="ad">
+          <div class="title">
+          <h2>Διαμέρισμα 70 τ.μ.</h2>
+          <h3>460 €</h3> 
+        </div>
+          <img src="RESOURCES/house2.webp" alt="Σπίτι 2" width="350" height="250">
+          
+            <div class="text-nextto-image"><p>
+            <span><img src="RESOURCES/bed.png" alt="bed" width="40" height="40"> x2</span> 
+            <span><img src="RESOURCES/bath.png" alt="bath" width="40" height="40"> x1</span> 
+            <span><img src="RESOURCES/house.png" alt="house" width="40" height="40"> 1972</span>  
+            </p></div>
+          
+          <p><b>Αθήνα (Άγιος Παντελεήμονας)</b></p>
+          <p>Τελευταία τροποποίηση: 2 ημέρες πριν </p>
+          <p class="ad-code">Κωδικός Αγγελίας: 12</p>
+        </div>
+
+        <div class="ad">
+          <div class="title">
+          <h2>Διαμέρισμα 52 τ.μ.</h2>
+          <h3>550 €</h3> 
+        </div>
+          <img src="RESOURCES/house3.webp" alt="Σπίτι 3" width="350" height="250">
+          
+            <div class="text-nextto-image"><p>
+            <span><img src="RESOURCES/bed.png" alt="bed" width="40" height="40"> x1</span>
+            <span><img src="RESOURCES/bath.png" alt="bath" width="40" height="40"> x1</span> 
+            <span><img src="RESOURCES/house.png" alt="house" width="40" height="40"> 1975</span>  
+           </p> </div>
+          
+          <p><b>Αθήνα (Νιρβάνα)</b></p>
+          <p>Τελευταία τροποποίηση: 6 ημέρες πριν </p>
+          <p class="ad-code">Κωδικός Αγγελίας: 13</p>
+        </div>
+
+        <div class="ad">
+          <div class="title">
+            <h2>Διαμέρισμα 25 τ.μ.</h2>
+            <h3>350 €</h3> 
+          </div>
+            <img src="RESOURCES/house4.jpg" alt="Σπίτι 4" width="350" height="250">
+            
+              <div class="text-nextto-image"><p>
+              <span><img src="RESOURCES/bed.png" alt="bed" width="40" height="40"> x1</span>
+              <span><img src="RESOURCES/bath.png" alt="bath" width="40" height="40"> x1</span> 
+              <span><img src="RESOURCES/house.png" alt="house" width="40" height="40"> 1980</span>  
+              </p></div>
+            
+            <p><b>Αθήνα (Κυψέλη)</b></p>
+            <p>Τελευταία τροποποίηση: 4 ημέρες πριν </p>
+            <p class="ad-code">Κωδικός Αγγελίας: 14</p>
+          </div>
+
+        <div class="ad">
+          <div class="title">
+            <h2>Διαμέρισμα 65 τ.μ.</h2>
+            <h3>850 €</h3> 
+          </div>
+            <img src="RESOURCES/house5.webp" alt="Σπίτι 5" width="350" height="250">
+            
+              <div class="text-nextto-image"><p>
+              <span><img src="RESOURCES/bed.png" alt="bed" width="40" height="40"> x2</span> 
+              <span><img src="RESOURCES/bath.png" alt="bath" width="40" height="40"> x2</span> 
+              <span><img src="RESOURCES/house.png" alt="house" width="40" height="40"> 2021</span>
+              </p></div>
+            
+            <p><b>Αθήνα (Μεταξουργείο)</b></p>
+            <p>Τελευταία τροποποίηση: 10 ημέρες πριν </p>
+            <p class="ad-code">Κωδικός Αγγελίας: 15</p>
+            </div>
+    <!-- </div> -->
+    </section>
+  </main>
+
+
+  
+
+
+
+
+
+  
+<!-- FOOTER -->
+<footer class="footer">
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p>Location: Greece, Athens, 11362<br>
+      Tel: 210-123-45-67<br>
+      &copy; Copyright 2020
+  </p>
+</footer>
+</body>
+
+</html>

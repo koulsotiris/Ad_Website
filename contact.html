@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="el">
+
+
+<!-- HEAD -->
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CONTACT</title>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="nav">
+        <div id="logo">
+            <img src="RESOURCES/logo.png" alt="Logo" width="58"  height="58">
+        </div>
+        <ul>
+          <li><div id="logo-li">
+            <img src="RESOURCES/logo.png" alt="Logo2" width="100"  height="100">
+          </div></li>
+          <li><a href="index.html"><i class="fa fa-fw fa-home"></i> <span>Home</span></a></li>
+          <li class="dropdown">
+            <a href="categories.html" class="dropbtn"><i class="fa fa-bars"></i> <span>Categories</span></a>
+            <div class="dropdown-content">
+              <a href="categories.html#house">Ακίνητα</a>
+              <a href="categories.html#car">Οχήματα</a>
+              <a href="categories.html#job">Εργασία</a>
+              <a href="categories.html#parts">Ανταλλακτικά</a>
+              <a href="categories.html#tools">Οικιακές συσκευές</a>
+            </div>
+          </li>
+          <li><a  href="about-us.html"><i class="fa fa-comment"></i> <span>About Us</span></a></li>
+          <li><a class="active" href="contact.html"><i class="fa fa-fw fa-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="register.html"><i class="fa fa-fw fa-user"></i><span>Register</span></a></li>
+        </ul>
+        
+    </nav>
+
+    <header class="header">
+        <h1 class="hcenter">Contact Us</h1>
+    </header>
+
+    <div class="sidebar">
+        <!--GOOGLEMAP-->
+        <div class="profile" style="padding-top: 100px; padding-right: 50px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.2670455664197!2d23.730367715323972!3d37.99423117972012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a2ccc0f74c4d%3A0x98bfad208765bc87!2zzp_Ouc66zr_Ovc6_zrzOuc66z4wgzqDOsc69zrXPgM65z4PPhM6uzrzOuc6_IM6RzrjOt869z47OvQ!5e0!3m2!1sel!2sgr!4v1606314181443!5m2!1sel!2sgr"
+                width="400" height="800" style="border-radius: 10px; box-shadow: 2px 2px 5px #888;"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="contact-container">
+            <!--CONTACT FORM-->
+            <div class="contact">
+                <label for="fname">FirstName</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..." required>
+                <label for="lname">LastName</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="name@example.com" required>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" maxlength="10" placeholder="Your phone number..." required>
+                <label for="adv">Advertisement number</label>
+                <input type="text" id="adv" name="adv" maxlength="7" placeholder="Advertisement number" required>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="Greece">Greece</option>
+                    <option value="Cyprus">Cyprus</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"
+                    required></textarea>
+                <input type="submit" value="Submit"
+                    onclick="alert('Ευχαριστούμε πολυ, θα σας απαντήσουμε το συντομότερο!')">
+            </div>
+        </section>
+        <br>
+        <br>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>Location: Greece, Athens, 11362<br>
+            Tel: 210-123-45-67<br>
+            &copy; Copyright 2020
+        </p>
+      </footer>
+</body>
+
+</html>
